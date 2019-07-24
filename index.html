@@ -4,12 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <title>NUMBER GUESSING GAME IN HTML</title>
     <link rel="stylesheet" href="/css/style.css" />
   </head>
-  <body>
-    <h1>NUMBER GUESSING GAME IN HTML</h1>
+  <body onload="printFirstLoad()">
+    <div class="centerBox">
+      <div class="container centerBoxInside">
+        <h2 class="text-success">
+          <i class="fa fa-question-circle"></i>_NUMBER GUESSING GAME IN HTML_<i
+            class="fa fa-question-circle"
+          ></i>
+        </h2>
 
+        <div class="input-group mt-3 mb-3">
+          <input
+            id="guessNumber"
+            type="text"
+            class="form-control"
+            placeholder="Please Enter Your Guess Number"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+
+        <div class="btn-group btn-group-lg mt-3 mb-3">
+          <button
+            type="button"
+            id="guessClick"
+            class="btn btn-success"
+            onclick="guessRdNumber()"
+          >
+            Click to guess
+          </button>
+          <button
+            type="button"
+            id="restartClick"
+            class="btn btn-warning"
+            onclick="startOver()"
+          >
+            Restart Game
+          </button>
+        </div>
+
+        <h4 id="randNumber" class="text-success">Random number</h4>
+        <h4 id="availableGuess" class="text-success"></h4>
+        <h4 id="guessResult" class="alert"></h4>
+        <ol id="guessList" class="text-success"></ol>
+      </div>
+    </div>
     <script src="/js/script.js"></script>
   </body>
 </html>
