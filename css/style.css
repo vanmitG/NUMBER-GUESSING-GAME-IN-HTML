@@ -1,3 +1,28 @@
-h1 {
-  color: green;
+body {
+  background-color: black;
+}
+.centerBox {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      135deg,
+      rgba(13, 54, 5, 0.9) 0%,
+      rgba(0, 0, 0, 0.2) 70%
+    ),
+    url("https://images.unsplash.com/photo-1521492210661-84a4913ceceb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80");
+
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+}
+.centerBoxInside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-group {
+  width: 20rem;
 }
