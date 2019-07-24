@@ -2,15 +2,15 @@
 
 /**generate Random number */
 let randomNumber = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
-// console.log("randomNumber", randomNumber);
+console.log("randomNumber", randomNumber);
 let availableGuess = 5;
 let guessSum = 0;
 let userGuess = 0;
 document.getElementById("guessNumber").focus();
 
 function printFirstLoad() {
-  document.getElementById("randNumber").innerHTML =
-    "random number: " + randomNumber;
+  // document.getElementById("randNumber").innerHTML =
+  //   "random number: " + randomNumber;
   document.getElementById("availableGuess").innerHTML =
     "Available Guess number: " + availableGuess;
 }
@@ -45,13 +45,15 @@ function guessRdNumber() {
       alertUser = "correct";
     }
 
-    const msg = `Your Guess Number is ${alertUser} and your average guess is ${averageGuess}`;
+    const msg = `Your Guess Number is ${alertUser}`;
     if (alertUser === "correct") {
-      document.getElementById("guessResult").innerHTML = msg;
+      document.getElementById("guessResult").innerHTML =
+        msg + ". You can play again";
       document.getElementById("guessResult").classList.remove("alert-danger");
       document.getElementById("guessResult").classList.add("alert-success");
     } else {
-      document.getElementById("guessResult").innerHTML = msg;
+      document.getElementById("guessResult").innerHTML =
+        msg + ". Please guess again.";
       document.getElementById("guessResult").classList.remove("alert-success");
       document.getElementById("guessResult").classList.add("alert-danger");
     }
