@@ -96,3 +96,7 @@ function startOver() {
   document.getElementById("guessNumber").value = "";
   document.getElementById("guessNumber").focus();
 }
+
+function keyDowndInGuessInput() {
+  if (event.keyCode == 13) document.getElementById("guessClick").click();
+}
