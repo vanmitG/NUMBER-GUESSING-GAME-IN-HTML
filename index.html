@@ -29,11 +29,13 @@
         <div class="input-group mt-3 mb-3">
           <input
             id="guessNumber"
-            type="text"
-            class="form-control"
+            type="number"
+            class="form-control text-success"
             placeholder="Please Enter Your Guess Number"
             aria-label="Username"
-            aria-describedby="basic-addon1"
+            aria-describedby="basic-addon1
+            "
+            onkeydown="keyDowndInGuessInput()"
           />
         </div>
 
@@ -41,7 +43,7 @@
           <button
             type="button"
             id="guessClick"
-            class="btn btn-success"
+            class="btn btn-outline-success text-white"
             onclick="guessRdNumber()"
           >
             Click to guess
@@ -49,7 +51,7 @@
           <button
             type="button"
             id="restartClick"
-            class="btn btn-warning"
+            class="btn btn-outline-warning text-white"
             onclick="startOver()"
           >
             Restart Game
