@@ -12,7 +12,7 @@ function printFirstLoad() {
   // document.getElementById("randNumber").innerHTML =
   //   "random number: " + randomNumber;
   document.getElementById("availableGuess").innerHTML =
-    "Available Guess number: " + availableGuess;
+    "Available Guess Numbers: " + availableGuess;
 }
 
 //guess random number

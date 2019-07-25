@@ -11,7 +11,7 @@ body {
       rgba(13, 54, 5, 0.9) 0%,
       rgba(0, 0, 0, 0.2) 70%
     ),
-    url("https://images.unsplash.com/photo-1521492210661-84a4913ceceb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80");
+    url("https://i.pinimg.com/originals/99/8c/57/998c57b6ee813a5a1bbd921406d0b06b.jpg");
 
   /* background-repeat: no-repeat; */
   background-size: cover;
@@ -24,5 +24,5 @@ body {
   align-items: center;
 }
 .input-group {
-  width: 20rem;
+  width: 19rem;
 }
